@@ -1,0 +1,21 @@
+site 'http://community.opscode.com/api/v1'
+
+# Base
+cookbook 'users'
+cookbook 'sudo'
+cookbook 'apt'
+cookbook 'git'
+cookbook 'build-essential'
+cookbook 'vim'
+
+# Application
+cookbook 'nodejs'
+cookbook 'npm'
+cookbook 'application'
+
+# Load balancer
+cookbook 'nginx'
+cookbook 'application_nginx'
+
+# Database
+cookbook 'mongodb'

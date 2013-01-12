@@ -5,7 +5,7 @@ This repository is for deploying the Aerodeck platform, both in production and d
 ## Requirements
 
 This suite of tools has a number of dependencies. [Chef](http://www.opscode.com/chef/) is used for automated deployment and
-provisioning. [Librarian](https://github.com/applicationsonline/librarian) is used to manage cookbooks.
+provisioning, [Librarian](https://github.com/applicationsonline/librarian) is used to manage cookbooks, and
 [Vagrant](http://www.vagrantup.com) is used to deploy locally.
 
 ### Chef and Librarian

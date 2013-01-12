@@ -10,7 +10,8 @@ cookbook 'vim'
 
 # Application
 cookbook 'nodejs'
-cookbook 'npm'
+cookbook 'npm',
+  :github => 'balbeko/chef-npm'
 cookbook 'application'
 
 # Load balancer

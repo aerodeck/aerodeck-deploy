@@ -23,8 +23,6 @@ SITE
     nodejs (1.0.2)
       apt (>= 0.0.0)
       build-essential (>= 0.0.0)
-    npm (0.1.0)
-      nodejs (>= 0.0.0)
     ohai (1.1.6)
     runit (0.16.2)
     sudo (2.0.4)
@@ -33,6 +31,14 @@ SITE
     windows (1.7.0)
       chef_handler (>= 0.0.0)
     yum (2.1.0)
+
+GIT
+  remote: https://github.com/balbeko/chef-npm
+  ref: master
+  sha: 6865658b2cb81fdf5e5c6f9f2650833965da8426
+  specs:
+    npm (0.1.0)
+      nodejs (>= 0.0.0)
 
 DEPENDENCIES
   application (>= 0)

@@ -5,6 +5,10 @@ Vagrant::Config.run do |config|
   config.vm.forward_port 27017, 8081
 
    config.vm.provision :chef_solo do |chef|
+   	chef.json.merge({
+      :chef_environment => "dev"
+    })
+
     chef.roles_path = "roles"
     chef.add_role("aerodeck_load_balancer")
     chef.add_role("aerodeck_application_server")

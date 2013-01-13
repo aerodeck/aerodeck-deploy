@@ -33,6 +33,13 @@ SITE
     yum (2.1.0)
 
 GIT
+  remote: https://github.com/aerodeck/chef-solo-search
+  ref: master
+  sha: 47201bb8a2e023bcdbb088de71d03ffa6e7dfff6
+  specs:
+    chef-solo-search (0.4.0)
+
+GIT
   remote: https://github.com/balbeko/chef-npm
   ref: master
   sha: 6865658b2cb81fdf5e5c6f9f2650833965da8426
@@ -40,15 +47,23 @@ GIT
     npm (0.1.0)
       nodejs (>= 0.0.0)
 
+PATH
+  remote: cookbooks-sources
+  specs:
+    aerodeck (0.1.0)
+      application (>= 0.0.0)
+      application_nginx (>= 0.0.0)
+      mongodb (>= 0.0.0)
+      nginx (>= 0.0.0)
+      nodejs (>= 0.0.0)
+      npm (>= 0.0.0)
+
 DEPENDENCIES
-  application (>= 0)
-  application_nginx (>= 0)
+  aerodeck (>= 0)
   apt (>= 0)
   build-essential (>= 0)
+  chef-solo-search (>= 0)
   git (>= 0)
-  mongodb (>= 0)
-  nginx (>= 0)
-  nodejs (>= 0)
   npm (>= 0)
   sudo (>= 0)
   users (>= 0)

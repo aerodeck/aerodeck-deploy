@@ -1,0 +1,22 @@
+{
+  "id": "vagrant",
+  "name": "vagrant-vm",
+  "chef_environment": "development",
+  "chef_type": "node",
+  "json_class": "Chef::Node",
+  "automatic": {
+    "hostname": "vagrant.vm",
+    "os": "ubuntu"
+  },
+  "normal": {
+  },
+  "default": {
+  },
+  "override": {
+  },
+  "run_list": [
+    "role[aerodeck_load_balancer]",
+    "role[aerodeck_application_server]",
+    "role[aerodeck_db_server]"
+  ]
+}

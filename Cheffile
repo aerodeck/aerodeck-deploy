@@ -1,5 +1,9 @@
 site 'http://community.opscode.com/api/v1'
 
+# Vagrant
+cookbook 'chef-solo-search',
+  :github => 'aerodeck/chef-solo-search'
+
 # Base
 cookbook 'users'
 cookbook 'sudo'
@@ -8,15 +12,10 @@ cookbook 'git'
 cookbook 'build-essential'
 cookbook 'vim'
 
-# Application
-cookbook 'nodejs'
+# Custom
 cookbook 'npm',
   :github => 'balbeko/chef-npm'
-cookbook 'application'
 
-# Load balancer
-cookbook 'nginx'
-cookbook 'application_nginx'
-
-# Database
-cookbook 'mongodb'
+# Application
+cookbook 'aerodeck',
+  :path => 'cookbooks-sources'

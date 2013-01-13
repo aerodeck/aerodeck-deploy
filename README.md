@@ -34,7 +34,7 @@ To download all of the required cookbooks using Librarian, you can run:
 librarian-chef install
 ```
 
-To start the local virtual machine, you can run:
+Then, to start the local virtual machine, run:
 
 ``` sh
 vagrant up

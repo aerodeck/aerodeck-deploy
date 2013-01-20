@@ -5,15 +5,15 @@ This repository is for deploying the Aerodeck platform, both in production and d
 ## Requirements
 
 This suite of tools has a number of dependencies. [Chef](http://www.opscode.com/chef/) is used for automated deployment and
-provisioning, [Librarian](https://github.com/applicationsonline/librarian) is used to manage cookbooks, and
+provisioning, [Berkshelf](http://berkshelf.com) is used to manage cookbooks, and
 [Vagrant](http://www.vagrantup.com) is used to deploy locally.
 
-### Chef and Librarian
+### Chef and Berkshelf
 
-You can install both Chef and Librarian using RubyGems:
+You can install both Chef and Berkshelf using RubyGems:
 
 ``` sh
-gem install chef librarian
+gem install chef berkshelf
 ```
 
 ### Vagrant
@@ -26,17 +26,11 @@ download and install the latest version of both VirtualBox and Vagrant from thei
 
 ## Getting Started
 
-To get the Aerodeck platform running locally, you only need to run a few commands
-
-To download all of the required cookbooks using Librarian, you can run:
+To get the Aerodeck platform running locally, you only need to run a few commands:
 
 ``` sh
-librarian-chef install
-```
-
-Then, to start the local virtual machine, run:
-
-``` sh
+git clone git://github.com/aerodeck/aerodeck-deploy.git
+git submodule update --init --recursive
 vagrant up
 ```
 

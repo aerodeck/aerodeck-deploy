@@ -12,10 +12,8 @@ cookbook 'git'
 cookbook 'build-essential'
 cookbook 'vim'
 
-# Custom
-cookbook 'npm',
-  :github => 'balbeko/chef-npm'
-
 # Application
+cookbook 'application_nodejs',
+  :github => 'conradev/application_nodejs'
 cookbook 'aerodeck',
   :path => 'cookbooks-sources'

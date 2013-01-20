@@ -40,11 +40,12 @@ GIT
     chef-solo-search (0.4.0)
 
 GIT
-  remote: https://github.com/balbeko/chef-npm
+  remote: https://github.com/conradev/application_nodejs
   ref: master
-  sha: 6865658b2cb81fdf5e5c6f9f2650833965da8426
+  sha: 0b0ef517a614e871b8df088c12de0733870a64ba
   specs:
-    npm (0.1.0)
+    application_nodejs (0.1.0)
+      application (>= 0.0.0)
       nodejs (>= 0.0.0)
 
 PATH
@@ -53,18 +54,16 @@ PATH
     aerodeck (0.1.0)
       application (>= 0.0.0)
       application_nginx (>= 0.0.0)
+      application_nodejs (>= 0.0.0)
       mongodb (>= 0.0.0)
-      nginx (>= 0.0.0)
-      nodejs (>= 0.0.0)
-      npm (>= 0.0.0)
 
 DEPENDENCIES
   aerodeck (>= 0)
+  application_nodejs (>= 0)
   apt (>= 0)
   build-essential (>= 0)
   chef-solo-search (>= 0)
   git (>= 0)
-  npm (>= 0)
   sudo (>= 0)
   users (>= 0)
   vim (>= 0)

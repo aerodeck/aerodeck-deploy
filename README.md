@@ -29,7 +29,7 @@ download and install the latest version of both VirtualBox and Vagrant from thei
 To get the Aerodeck platform running locally, you only need to run a few commands:
 
 ``` sh
-git clone git://github.com/aerodeck/aerodeck-deploy.git
+git clone git://github.com/aerodeck/aerodeck-deploy.git; cd aerodeck-deploy
 git submodule update --init --recursive
 vagrant up
 ```

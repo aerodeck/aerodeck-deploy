@@ -26,17 +26,12 @@ download and install the latest version of both VirtualBox and Vagrant from thei
 
 ## Getting Started
 
-To get the Aerodeck platform running locally, you only need to run a few commands
-
-To download all of the required cookbooks using Librarian, you can run:
+To get the Aerodeck platform running locally, you only need to run a few commands:
 
 ``` sh
+git clone git://github.com/aerodeck/aerodeck-deploy.git; cd aerodeck-deploy
+git submodule update --init --recursive
 librarian-chef install
-```
-
-Then, to start the local virtual machine, run:
-
-``` sh
 vagrant up
 ```
 
